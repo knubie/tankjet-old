@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	$('.work-link').click(function(){
-		$('.work-container').css('height', '100%');
+		$('.work-container').css('overflow', 'visible');
 		$('.scroller').scrollTo($('.work'), 500, {onAfter:function(){
 			
 			}});
@@ -9,13 +9,13 @@ $(document).ready(function(){
 	
 	$('.about-link').click(function(){
 		$('.scroller').scrollTo($('.about'), 500, {onAfter:function(){
-			$('.work').css('height', '100px');
+			$('.work-container').css('overflow', 'hidden');
 			}});
 	});
 	
 	$('.contact-link').click(function(){
 		$('.scroller').scrollTo($('.contact'), 500, {onAfter:function(){
-			$('.work').css('height', '100px');
+			$('.work-container').css('overflow', 'hidden');
 			}});
 	});
 	
