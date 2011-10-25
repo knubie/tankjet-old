@@ -1,18 +1,22 @@
 $(document).ready(function(){
 	
 	$('.work-link').click(function(){
-		console.log('this part work')
-		$('.scroller').scrollTo($('.work'), 500);
+		$('.work-container').css('height', '100%');
+		$('.scroller').scrollTo($('.work'), 500, {onAfter:function(){
+			
+			}});
 	});
 	
-	$('.blog-link').click(function(){
-		console.log('this part work')
-		$('.scroller').scrollTo($('.blog'), 500);
+	$('.about-link').click(function(){
+		$('.scroller').scrollTo($('.about'), 500, {onAfter:function(){
+			$('.work').css('height', '100px');
+			}});
 	});
 	
 	$('.contact-link').click(function(){
-		console.log('this part work')
-		$('.scroller').scrollTo($('.contact'), 500);
+		$('.scroller').scrollTo($('.contact'), 500, {onAfter:function(){
+			$('.work').css('height', '100px');
+			}});
 	});
 	
 });

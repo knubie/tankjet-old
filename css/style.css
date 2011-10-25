@@ -109,7 +109,7 @@ body {
 	display: inline-block;
 }
 
-.vert-scroll {
-	height: 100%;
-	overflow: scroll;
+.work-container {
+	height: 100px;
+	overflow: hidden;
 }
